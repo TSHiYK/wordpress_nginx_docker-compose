@@ -132,5 +132,19 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+### WordPress ###
+/.env
+/vendor
+/wordpress/*
+!/wordpress/favicon.ico
+!/wordpress/google*.html
+!/wordpress/wp-content
+/wordpress/wp-content/*
+!/wordpress/wp-content/themes
+/wordpress/wp-content/themes/twenty*
+/wordpress/wp-content/themes/index.php
+
+### Docker ###
+/mysql/
 
 # End of https://www.gitignore.io/api/git,node,macos,windows
