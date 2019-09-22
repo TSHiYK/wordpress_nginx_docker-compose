@@ -49,7 +49,7 @@ Note: Make a note of the password of Admin password.
 
 `Admin password: **********`
 
-### Optional: Initial settings
+### Optional: Change your language of WordPress
 
 Change your language of WordPress to Japanese.
 
