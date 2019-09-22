@@ -25,35 +25,27 @@ MYSQL_USER=root
 MYSQL_PASSWORD=password
 ```
 
-### Run containers with compose
+### Initial Settings
 
-`$ docker-compose up -d`
+`$ sh ./setup.sh`
 
-The app will be running at [http://localhost:8080](http://localhost:8080).
+- Install WordPress (set admin user)
+- Change your language to Japanese
 
-### Shut it down
-
-`$ docker-compose down -v`
-
-## Initial Settings
-
-Access to wordpress container.
-
-`$ docker-compose exec wordpress /bin/bash`
-
-Install WordPress and set a name and an email of an admin user.
-
-`# wp core install --allow-root --url="http://localhost:8080" --title="test" --admin_user="wpadmin" --admin_email="wpadmin@sample.com"`
+| Admin Name | Admin Email        | Admin Password |
+| ---------- | ------------------ | -------------- |
+| wpadmin    | wpadmin@sample.com | -              |
 
 Note: Make a note of the password of Admin password.
 
 `Admin password: **********`
 
-### Optional: Change your language of WordPress
+### Run
 
-Change your language of WordPress to Japanese.
+`$ docker-compose up -d`
 
-```
-# wp language core install ja  --allow-root
-# wp language core activate ja --allow-root
-```
+The app will be running at [https://localhost:8080](https://localhost:8080).
+
+### Shut it down
+
+`$ docker-compose down -v`
