@@ -1,4 +1,4 @@
-# wp-plugin-adobesign
+# wordpress_nginx_docker-compose
 
 Docker Compose with Wordpress (PHP 7.3), Nginx and MariaDB.
 
