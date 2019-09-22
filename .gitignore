@@ -144,6 +144,7 @@ $RECYCLE.BIN/
 /wordpress/wp-content/themes/twenty*
 /wordpress/wp-content/themes/index.php
 !/wordpress/wp-content/plugins
+/wordpress/wp-content/plugins/my-plugin
 /wordpress/wp-content/plugins/akismet
 /wordpress/wp-content/plugins/hello.php
 /wordpress/wp-content/plugins/index.php
@@ -151,5 +152,6 @@ $RECYCLE.BIN/
 
 ### Docker ###
 /mysql/
+/tmp-for-test/
 
 # End of https://www.gitignore.io/api/git,node,macos,windows

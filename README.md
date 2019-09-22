@@ -6,7 +6,7 @@ Docker Compose with Wordpress (PHP 7.3), Nginx and MariaDB.
 - MariaDB - `mariadb`
 - WordPress & PHP 7.3 - `wordpress:php7.3-fpm`
 
-PHPUnit's version is 8.
+PHPUnit's version is 7.
 
 ## How to use
 
@@ -49,3 +49,12 @@ The app will be running at [https://localhost:8080](https://localhost:8080).
 ### Shut it down
 
 `$ docker-compose down -v`
+
+## How to unit test for plugin
+
+- If you have your plugin directory, `docker-compose run --rm wordpress wp scaffold plugin-tests YOUR_PLUGIN_NAME --allow-root`.
+- If you create a new plugin, `docker-compose run --rm wordpress wp scaffold plugin YOUR_PLUGIN_NAME --allow-root`.
+
+### Test
+
+`docker-compose exec wordpress bash -c "cd /var/www/html/wp-content/plugins/your-plugin-directory; phpunit"`

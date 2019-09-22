@@ -37,6 +37,7 @@ services:
     env_file: .env
     volumes:
       - ./wordpress:/var/www/html
+      - ./tmp-for-test:/tmp
     restart: always
     env_file: .env
     links:
