@@ -143,6 +143,11 @@ $RECYCLE.BIN/
 !/wordpress/wp-content/themes
 /wordpress/wp-content/themes/twenty*
 /wordpress/wp-content/themes/index.php
+!/wordpress/wp-content/plugins
+/wordpress/wp-content/plugins/akismet
+/wordpress/wp-content/plugins/hello.php
+/wordpress/wp-content/plugins/index.php
+
 
 ### Docker ###
 /mysql/
