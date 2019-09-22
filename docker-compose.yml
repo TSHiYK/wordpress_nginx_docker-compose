@@ -25,7 +25,10 @@ services:
     env_file: .env
     restart: always
   wordpress:
-    image: wordpress:php7.2-fpm
+    image: wordpress:php7.3-fpm
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - '9000:9000'
     container_name: wordpress
